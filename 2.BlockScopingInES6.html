@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>ES6 let keyword</title>
+    </head>
+    
+    <body>            
+    </body>      
+     <script>
+             let y =2;
+             {
+                let x =1;
+                 let z =2;
+                 console.log(z);//2             
+             }
+             {
+                console.log(x);//error
+                let z = 4//no redeclaration error
+                console.log(z);//4
+                console.log(y);//2 ,Global variable y
+             }
+             
+             let pass;
+             let mark = 50;
+             if(mark > 40){
+                pass=true;
+             }else{
+                 pass = false;
+             }
+         console.log(pass);
+             
+             
+    </script>
+</html>

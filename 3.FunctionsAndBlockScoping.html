@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>ES6 let keyword</title>
+    </head>
+    
+    <body>            
+    </body>      
+     <script>
+//             {
+//                great();            //hi
+//                function great(){
+//                    console.log("hi");
+//                }
+//                great();                //hi
+//                
+//                {
+//                    function great(){
+//                        console.log("Hello Roshan");
+//                    }
+//                    great();//hello Roshan
+//                }
+//                great();//hi
+//             }
+//             
+             //NOTE : This Another test Cases see video no:236
+             
+                great();            //hi
+                function great(){
+                    console.log("hi");
+                }
+                great();                //hi
+                
+                {
+                    function great(){
+                        console.log("Hello Roshan");
+                    }
+                    great();//hello Roshan
+                    let   x =1;
+                }
+                great();//hello Roshan
+         
+         //Note: Imp Concept here:
+         //When we call function In this Global scope it's going to look inside the blocks which are in the global scope.Although preceding block is considered as a separate scope for let declaraton but  here Is A concept:
+//         
+//         If we call a function in global(imp is global) scope and there is a block preceding that function then that function is able to access  that block and can use that function .
+   //      this is not valid for varaibles.
+//             
+         //    console.log(x);//Error 
+         
+//**************************************************************************         
+         
+         //Another concepts 
+        //   great();            //error if outer great fun is commemted
+//                function great(){
+//                    console.log("hi");
+//                }
+     //    great();                //error if outer great fun is commemted
+                
+                {
+                    great();//hello roshan
+                    function great(){
+                        console.log("Hello Roshan");
+                    }
+                    great();//hello Roshan
+                    
+                }
+                great();//hello Roshan
+         
+         //**********************************************************88
+         
+         
+         //Another concepts 
+                
+                {
+                    great();//hello Roshan
+                    function great(){
+                        console.log("Hello Roshan");
+                    }
+                    great();//hello Roshan
+                    
+                }
+                great();//hello Roshan
+             
+    </script>
+</html>

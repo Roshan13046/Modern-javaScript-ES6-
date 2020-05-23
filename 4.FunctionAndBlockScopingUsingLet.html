@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>ES6 let keyword</title>
+    </head>
+    
+    <body>            
+    </body>      
+     <script>
+         
+//         block Scoping seems to be confusing so we use the let keyword for functions or variables declaration it acts as global 
+//             great(); //ERROR
+            let great = function(){ 
+                console.log('hi');
+            }
+            great();//hi
+            {
+                let great = function(){
+                    console.log("Hello");
+                }
+                great();//hello
+                {
+                    let great = function(){
+                        console.log("hi there");
+                    }
+                }
+            }
+            great();//hi
+            
+         {
+             let great = function(){
+                 console.log("hi hello");
+             }
+         }
+         great();//hi
+         
+    </script>
+</html>

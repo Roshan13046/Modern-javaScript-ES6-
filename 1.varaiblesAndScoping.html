@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>ES6 let keyword</title>
+    </head>
+    
+    <body>            
+    </body>      
+     <script>
+            
+<!--   redeclaration is not allowed unlike var-->
+         //  let x =1;
+            let x =4;
+            
+            function add(y){
+                return y+x;
+            }
+            console.log(add(3));//7
+            //sol let variables can be accessed from functions if declared in their outer environment just like var
+            
+            function add2(y){
+                let x=2;
+                return x+y;
+            }
+            console.log(add2(3));//5
+            
+            //hoisting is not supported by ES6 unlike JS
+            //console.log(z);//error:z in not defined
+            
+            //Note : temporal dead zone
+            let z;
+            console.log(z);
+            z =2;
+            console.log(z);
+            
+        
+    </script>
+</html>
