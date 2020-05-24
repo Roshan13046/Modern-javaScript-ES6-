@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Constants</title>
+    </head>
+    
+    <body>            
+    </body>      
+     <script>
+         //ERROR : if constants are not initialzed
+         //const NAME;
+         
+         const NAME ="Roshan";
+         console.log(NAME);
+         
+         //Error if we change the constant value
+         const PERSON = {
+             name :"Roshan",
+             age:23,
+             degree:"BE"
+         };
+         
+         console.log(PERSON);
+         //no error if we change the constant object data members
+         PERSON.age=24444;
+         PERSON.name ="shubham";
+         PERSON.degree="ICSE";
+         console.log(PERSON);
+         
+         //error if we assign constant object to something
+         //PERSON = something //ERROR
+         PERSON = new Object("XYZ",34,"SCC");
+         
+    </script>
+</html>
